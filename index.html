@@ -1,882 +1,601 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16.png">
+  <link rel="mask-icon" href="/images/mlogo.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha256-4Lad8m4ZWW1Lgb9+sMVLYEfnIh7BjV1NQMEe79Pviks=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/fancybox/fancybox.css" integrity="sha256-mdaMxrItEW6hMIVJJNPKuX0B7KCSJQVEv3mVY4N2we4=" crossorigin="anonymous">
 
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.charliec.site","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
-
-  
-  
-  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/32.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/16.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/mlogo.png?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="一个不想当教授的工程师不是一个好农民！">
+    <meta name="description" content="一个不想当教授的工程师不是一个好农民！">
 <meta property="og:type" content="website">
 <meta property="og:title" content="一进制">
-<meta property="og:url" content="charlieforc.github.io/index.html">
+<meta property="og:url" content="https://www.charliec.site/index.html">
 <meta property="og:site_name" content="一进制">
 <meta property="og:description" content="一个不想当教授的工程师不是一个好农民！">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Charlie">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一进制">
-<meta name="twitter:description" content="一个不想当教授的工程师不是一个好农民！">
 
 
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
+<link rel="canonical" href="https://www.charliec.site/">
 
 
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
 
-  <link rel="canonical" href="charlieforc.github.io/"/>
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>一进制</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js" defer></script>
+  <script async src="https://hm.baidu.com/hm.js?fce6c02d5e883081c96403c12cb14a6d"></script>
 
 
 
 
 
-  <title>一进制</title>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/6.1.14/fancybox/fancybox.umd.js" integrity="sha256-QnJV4HT5r8i89ovZGRD86iynZqHerEbT2xt69vDM36I=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+  <script src="/js/third-party/fancybox.js" defer></script>
+
+
+
   
 
 
 
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?fce6c02d5e883081c96403c12cb14a6d";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">一进制</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle">Chaos</p>
-      
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-search popup-trigger" aria-label="搜索" role="button">
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">一进制</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Chaos</p>
+  </div>
+
+  <div class="site-nav-toggle" aria-label="切换导航栏" role="button">
+      <i class="fa fa-ellipsis fa-fw fa-lg"></i>
   </div>
 </div>
 
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
 </nav>
 
 
 
- </div>
-    </header>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Charlie"
+      src="/images/mlogo.png">
+  <p class="site-author-name" itemprop="name">Charlie</p>
+  <div class="site-description" itemprop="description">一个不想当教授的工程师不是一个好农民！</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/CharlieForC" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;CharlieForC" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:c@charlieC.site" title="E-Mail → mailto:c@charlieC.site" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
     
-      
+  </aside>
 
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
   
 
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2026/11/04/写在30岁之前/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2026/11/06/%E6%88%91%E4%BB%AC%E5%8F%88%E6%98%AF%E8%B0%81%E7%9A%84AI/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
     </span>
 
-    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/11/06/%E6%88%91%E4%BB%AC%E5%8F%88%E6%98%AF%E8%B0%81%E7%9A%84AI/" class="post-title-link" itemprop="url">我们又是谁的AI</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2026/11/04/写在30岁之前/" itemprop="url">写在30岁之前</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2026-11-04T17:02:23+08:00">
-                2026-11-04
-              </time>
-            
+      <time title="创建时间：2026-11-06 23:33:59" itemprop="dateCreated datePublished" datetime="2026-11-06T23:33:59+08:00">2026-11-06</time>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2026/11/04/写在30岁之前/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2026/11/04/写在30岁之前/" class="cy_cmt_count" data-xid="2026/11/04/写在30岁之前/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>时间过得好快，10岁生日没有感觉，20岁生日也没有感觉，转眼将要而立之年，总感觉背后一阵凄凉。我曾经是个很爱规划的人，即便疫情过后开始过得洒脱起来，也会对近期的生活做一些小小的规划，突然迈进30岁，突然感觉很慌，这个数字只是在身边人的嘴里一遍一遍提起，我的态度一直是逃避，更谈不上对30岁有什么规划，所以有一种惶恐的感觉。或许是因为当下的状态实在不称心意，或许是对未来的迷茫。</p>
-<p>30岁应该是一个什么状态？父母的三十岁，女儿已经上小学，办下了二胎准生证；姐姐的三十岁迎来了第一个小宝贝；发小的三十岁已经是3个孩子的父亲，为了家庭风里来雨里去，奔波不停。我呢？漂泊在北京，谈着一场看似虚无缥缈的恋爱，住在租来的房里守着一只命运馈赠的小猫，车子委屈巴巴停在六环里，肉身每天“享受”4小时通勤带来的快感，但是心里告诉我，无论计划与否，我的生活都不应该是这个样子的。</p>
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="制造工具的目的是什么"><a href="#制造工具的目的是什么" class="headerlink" title="制造工具的目的是什么"></a>制造工具的目的是什么</h2><p>让我们回到很久以前人类始祖站起来的那片非洲土地，某一个原始人发现用石头可以更快的打开坚果，锋利的石头刃口可以轻松划开动物的皮毛，从此人类进入旧石器时代。</p>
+<p>我们制造工具的目的，其实很简单，就是提高效率，简单说是提高速度，再说的通俗一点——要快！为了这个目的，越来越多的工具开始出现，随着原始人制造工具的速度也越来越快，更多更好用的工具被创造出来，逐渐牛车被蒸汽机替代，蒸汽机被电机替代，电机有促进了信息时代的发展，我们的信息开始以光速在这个空间中传播。</p>
+<p>终于，我们迎来了AI的到来。</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2026/11/04/写在30岁之前/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+            <div class="post-button">
+              <a class="btn" href="/2026/11/06/%E6%88%91%E4%BB%AC%E5%8F%88%E6%98%AF%E8%B0%81%E7%9A%84AI/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2026/11/01/新写一篇吧/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2026/11/04/%E5%86%99%E5%9C%A830%E5%B2%81%E4%B9%8B%E5%89%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
     </span>
 
-    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/11/04/%E5%86%99%E5%9C%A830%E5%B2%81%E4%B9%8B%E5%89%8D/" class="post-title-link" itemprop="url">写在30岁之前</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2026/11/01/新写一篇吧/" itemprop="url">新写一篇吧</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2026-11-01T21:16:08+08:00">
-                2026-11-01
-              </time>
-            
+      <time title="创建时间：2026-11-04 17:02:23" itemprop="dateCreated datePublished" datetime="2026-11-04T17:02:23+08:00">2026-11-04</time>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2026/11/01/新写一篇吧/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2026/11/01/新写一篇吧/" class="cy_cmt_count" data-xid="2026/11/01/新写一篇吧/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote><p>AI太好用了！！！</p>
-<footer><strong>我说的</strong><cite>今天</cite></footer></blockquote>
-<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>其实当年写了什么，已经不记得了，今天看了这个博客，真的是恍如隔世，甚至博客里的图都已经没有了，渲染工具都落后了十几个版本了，git都连不上GitHub了。昨晚无聊，突然发现这个域名居然只要6元不到，虽然续费需要100多，但是第一年6元，先白嫖再说，哈哈哈。其实我对网站这些东西一窍不通，唯一的前端基础是初中的时候学插入一条分割线，现在有AI了，能把这个博客重新搭起来不知道少看多少文章，少花多少时间。</p>
-<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>其实也就注册域名和配置DNS是我跟着B站一步一步做的，后面发现cloudflare可以用API丢给AI操作，这还等什么，直接把权限丢给AI，我做好我的产品经理，花钱小钱办大事了属于是。不知道今天更新完以后还会不会继续更新，再说吧。晚安</p>
-
-          
+    <div class="post-body" itemprop="articleBody">
+          <p>时间过得好快，10岁生日没有感觉，20岁生日也没有感觉，转眼将要而立之年，总感觉背后一阵凄凉。我曾经是个很爱规划的人，即便疫情过后开始过得洒脱起来，也会对近期的生活做一些小小的规划，突然迈进30岁，突然感觉很慌，这个数字只是在身边人的嘴里一遍一遍提起，我的态度一直是逃避，更谈不上对30岁有什么规划，所以有一种惶恐的感觉。或许是因为当下的状态实在不称心意，或许是对未来的迷茫。</p>
+<p>30岁应该是一个什么状态？父母的三十岁，女儿已经上小学，办下了二胎准生证；姐姐的三十岁迎来了第一个小宝贝；发小的三十岁已经是3个孩子的父亲，为了家庭风里来雨里去，奔波不停。我呢？漂泊在北京，谈着一场看似虚无缥缈的恋爱，住在租来的房里守着一只命运馈赠的小猫，车子委屈巴巴停在六环里，肉身每天“享受”4小时通勤带来的快感，但是心里告诉我，无论计划与否，我的生活都不应该是这个样子的。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2026/11/04/%E5%86%99%E5%9C%A830%E5%B2%81%E4%B9%8B%E5%89%8D/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
         
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2020/02/16/希政猜想/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2026/11/01/%E6%96%B0%E5%86%99%E4%B8%80%E7%AF%87%E5%90%A7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
     </span>
 
-    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/11/01/%E6%96%B0%E5%86%99%E4%B8%80%E7%AF%87%E5%90%A7/" class="post-title-link" itemprop="url">新写一篇吧</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/02/16/希政猜想/" itemprop="url">希政猜想</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-16T22:04:56+08:00">
-                2020-02-16
-              </time>
-            
+      <time title="创建时间：2026-11-01 21:16:08" itemprop="dateCreated datePublished" datetime="2026-11-01T21:16:08+08:00">2026-11-01</time>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2020/02/16/希政猜想/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2020/02/16/希政猜想/" class="cy_cmt_count" data-xid="2020/02/16/希政猜想/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
+          <blockquote><p>AI太好用了！！！</p>
+<footer><strong>我说的</strong><cite>今天</cite></footer></blockquote>
+
+
+
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>其实当年写了什么，已经不记得了，今天看了这个博客，真的是恍如隔世，甚至博客里的图都已经没有了，渲染工具都落后了十几个版本了，git都连不上GitHub了。昨晚无聊，突然发现这个域名居然只要6元不到，虽然续费需要100多，但是第一年6元，先白嫖再说，哈哈哈。其实我对网站这些东西一窍不通，唯一的前端基础是初中的时候学插入一条分割线，现在有AI了，能把这个博客重新搭起来不知道少看多少文章，少花多少时间。</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>其实也就注册域名和配置DNS是我跟着B站一步一步做的，后面发现cloudflare可以用API丢给AI操作，这还等什么，直接把权限丢给AI，我做好我的产品经理，花钱小钱办大事了属于是。不知道今天更新完以后还会不会继续更新，再说吧。晚安</p>
 
       
-      
+    </div>
 
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
       
-        
-          
-            <h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h3 id="希政第一猜想"><a href="#希政第一猜想" class="headerlink" title="希政第一猜想"></a>希政第一猜想</h3><p>物质可以无限被分割，我们已知的最小粒子包含至少一个宇宙，反过来讲我们所在的这个世界的宇宙仅仅是一粒尘埃</p>
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2020/02/16/%E5%B8%8C%E6%94%BF%E7%8C%9C%E6%83%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/16/%E5%B8%8C%E6%94%BF%E7%8C%9C%E6%83%B3/" class="post-title-link" itemprop="url">希政猜想</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-16 22:04:56" itemprop="dateCreated datePublished" datetime="2020-02-16T22:04:56+08:00">2020-02-16</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h3 id="希政第一猜想"><a href="#希政第一猜想" class="headerlink" title="希政第一猜想"></a>希政第一猜想</h3><p>物质可以无限被分割，我们已知的最小粒子包含至少一个宇宙，反过来讲我们所在的这个世界的宇宙仅仅是一粒尘埃</p>
 <h3 id="希政第二猜想"><a href="#希政第二猜想" class="headerlink" title="希政第二猜想"></a>希政第二猜想</h3><p>人类包括人类所在的这个世界，至少是一代比人类效率低下，寿命更长，行动缓慢的物质直接或间接创造出来的工具，就像人类创造了比人类效率高、行动迅速，寿命短的机器</p>
 <h3 id="希政第三猜想"><a href="#希政第三猜想" class="headerlink" title="希政第三猜想"></a>希政第三猜想</h3><p>随着人类技术的发展，机器会取代人类</p>
 <h3 id="希政第四猜想"><a href="#希政第四猜想" class="headerlink" title="希政第四猜想"></a>希政第四猜想</h3><p>机器创造的机器必将取代机器</p>
 <h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>我有一个绝妙的方法来证明上面的猜想，但是我现在要去睡觉了，熬夜会变胖的。</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2020/01/22/没错，今天我去相亲了/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2020/01/22/%E6%B2%A1%E9%94%99%EF%BC%8C%E4%BB%8A%E5%A4%A9%E6%88%91%E5%8E%BB%E7%9B%B8%E4%BA%B2%E4%BA%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
     </span>
 
-    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/01/22/%E6%B2%A1%E9%94%99%EF%BC%8C%E4%BB%8A%E5%A4%A9%E6%88%91%E5%8E%BB%E7%9B%B8%E4%BA%B2%E4%BA%86/" class="post-title-link" itemprop="url">没错，今天我去相亲了</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/22/没错，今天我去相亲了/" itemprop="url">没错，今天我去相亲了</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-22T22:40:15+08:00">
-                2020-01-22
-              </time>
-            
+      <time title="创建时间：2020-01-22 22:40:15" itemprop="dateCreated datePublished" datetime="2020-01-22T22:40:15+08:00">2020-01-22</time>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2020/01/22/没错，今天我去相亲了/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2020/01/22/没错，今天我去相亲了/" class="cy_cmt_count" data-xid="2020/01/22/没错，今天我去相亲了/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>没错，和预计的一样，我回到家的第一顿饭，就被全桌子的人嫌弃没有对象（就是不让我中学谈恋爱的那群人），我也是无奈了，我说我年纪小，他们拿出早就准备好的100条比我小但是孩子能打酱油的案例来怼我。天呐！！！那以前不都是反面案例吗？这双标玩的溜啊~</p>
+    <div class="post-body" itemprop="articleBody">
+          <p>没错，和预计的一样，我回到家的第一顿饭，就被全桌子的人嫌弃没有对象（就是不让我中学谈恋爱的那群人），我也是无奈了，我说我年纪小，他们拿出早就准备好的100条比我小但是孩子能打酱油的案例来怼我。天呐！！！那以前不都是反面案例吗？这双标玩的溜啊~</p>
 <p>终于，在他们的威逼利诱之下进行了一场非常传统的相亲仪式。媒人是我本家的两个老嫂子，其中我的媒人，按照辈分我应该叫姨奶奶（没错我哥哥的媳妇是我姨奶奶），女方的媒人是她的姑姑。昨天晚上通知我早上相亲，所以今早买了糖果、瓜子、香烟。相亲地点在女方的姑姑家里，刚一进大门，我发现我一个人都不认识~眼前这个中年妇女应该就是女方的媒人，也是我的嫂子，她招呼我们在堂屋坐下后，一个女生也进屋来坐下，我猜测这个应该就是相亲对象了，通过后面的谈话印证了我的猜想，进来个一个高高瘦瘦的中年男子，这个应该就是我的那个哥哥，我按之前设定的程序拆开带来的香烟，给他递过去，尴尬的是我拆开了包烟的锡纸却怎么都取不出烟来，只能整盒递给了眼前这位哥哥，看他熟练的拿出烟来点上，我只能感叹自己不会吸烟现在连烟都不知道怎么开了~</p>
 <p>整个相亲过程在媒人的家常中度过，期间我和女方有寥寥数语的交流，那一瞬间，我仿佛回到了父母相亲的那个时候，一个傻傻痴痴，一个痴痴傻傻。临走之际，我主动交换了微信~后面就是大家开始问我感受如何~我总感觉这种事情没有一个准确的答案，不如互相了解一下载做结论，大家也不至于尴尬~</p>
 <p>对于相亲这个事情，不同的相亲形式要以不同的目的来驱动，目标目前可以分为着急结婚的和不着急结婚的，着急结婚的，直接开门见山以利益为契合点，缩减恋爱区间，直奔主题快速组成家庭；另一种是不着急结婚的，也就是我们现在的这种情况，应该是以认识为主，润物细无声，正常通过恋爱进入婚姻。</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2020/01/04/你好2020/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2020/01/04/%E4%BD%A0%E5%A5%BD2020/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
     </span>
 
-    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/01/04/%E4%BD%A0%E5%A5%BD2020/" class="post-title-link" itemprop="url">你好2020</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/04/你好2020/" itemprop="url">你好2020</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-04T22:46:46+08:00">
-                2020-01-04
-              </time>
-            
+      <time title="创建时间：2020-01-04 22:46:46" itemprop="dateCreated datePublished" datetime="2020-01-04T22:46:46+08:00">2020-01-04</time>
+    </span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2020/01/04/你好2020/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2020/01/04/你好2020/" class="cy_cmt_count" data-xid="2020/01/04/你好2020/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>得嘞，展眼2020年了，今年要全面脱贫，要全面小康，我已经准备好国家给我寄子弓 ……</p>
+    <div class="post-body" itemprop="articleBody">
+          <p>得嘞，展眼2020年了，今年要全面脱贫，要全面小康，我已经准备好国家给我寄子弓 ……</p>
 <p>算了，为了给虵续命我还是好好活着吧</p>
 <p>2020年绝对不能像2019年那么嚣张的立flag了，幸亏都不看这个博，太丢人了</p>
 <p>今年的元旦可能是这几年玩的最嗨的吧，为了水字数，我们来盘点一下近几年的跨年吧~</p>
@@ -887,1016 +606,361 @@
 <p>2020年<br>也就是今年，不在济南，但是来了一个故人，首先我以为她来杭州只是说说，直到看到了她给他妈妈的申请，又单独和她妈妈确认过，发现这是真的~说真的我倒是挺希望王钰婷能出来走走，毕竟这么长时间呆在家，如果是我估计已经疯掉了。<br>我把酒店定在西湖边，这么重要的商圈，跨年应该不会太冷清，然后还可以出去转转。没错，31号晚上我们终于在武林广场迎来了21世纪前20年的倒计时，也迎来了一场宏达的懵逼大会，哈哈哈哈哈</p>
 <p>2020年，我对自己可能真的没什么要求，只希望工作不丢，越来越好，希望家人都健健康康，<br>你好2020</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2019/12/12/bye 2019/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2019/12/12/bye%202019/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
     </span>
 
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/12/bye 2019/" itemprop="url">bye 2019</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-12T23:37:49+08:00">
-                2019-12-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2019/12/12/bye 2019/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2019/12/12/bye 2019/" class="cy_cmt_count" data-xid="2019/12/12/bye 2019/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>吴站长说，时间像一头野驴<br>2018年走的很快，可以让我没想到的是2019年居然是小跑着过完的。一路向前跑的不仅仅是时间，还有我们这些努力的孩子。</p>
-<p>前几天终于在领导的“逼迫”完成了年终总结，写的不多，就6页纸，回顾了一下这一年的工作和心得，就一年，我居然跑了中国十几个城市，大大小小的主机厂跑了个遍，见识到了毫无头绪的跟风，也体会到了踏踏实实的做事，很庆幸能和比自己优秀的人共事，突然体会到那种久违的平等。</p>
-<p>做了一年的革命砖头，即享受那种“时时新”的感觉，有讨厌那种无处着落的悲凉，回头看看元旦立下的flag，像飓风吹过稻田，一片一片的倒下，恨自己没有信守诺言，更狠自己没有坚持到底，有时候甚至觉得活该没有女朋友，估计就是有，也会被我弄丢吧。</p>
-<p>2020年我只想做成一件事，就是瘦下来，再也不过多的奢求什么了，我答应妹妹早睡的，晚安</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2019/02/24/感谢时代的造就/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/mlogo.png">
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一进制">
-    </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/12/12/bye%202019/" class="post-title-link" itemprop="url">bye 2019</a>
+        </h2>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/24/感谢时代的造就/" itemprop="url">感谢时代的造就</a></h1>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-24T21:11:17+08:00">
-                2019-02-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2019/02/24/感谢时代的造就/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2019/02/24/感谢时代的造就/" class="cy_cmt_count" data-xid="2019/02/24/感谢时代的造就/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天并不是什么特殊的日子，如果非要说特殊，那应该就是我看了徐童老师纪录片“流民三部曲”中的《麦收》和《算命》吧，虽然我的家庭并不富裕，但还算衣食无忧，我从没想到过在我生活过得轨迹中还有那么多人在为了活着奔波。我是农民的儿子，我以为我们曾经的生活已经是水深火热了，但是还是没想到原来这世间的水比我的想象力还深。</p>
-<p>其实在几十年前的我家，就是现在的他家。奶奶至今向我们诉说着他们结婚时的清贫，结婚两三年没有一件像样的家具，一家人围坐在盖垫旁吃饭，其实即便那是清苦，变化也已经悄悄开始了。奶奶因辛亥革命未遭缠足之苦，爷爷因读过书被推荐参加了工作，父亲姊妹三人都读到了高中，我想着正是因为时代的改变给我家带来的幸福。在某种程度上，我们算是那批后富裕起来的人，但是在另一方面，我们可能又是先富裕起来的人。</p>
-<h2 id="生活所迫，贞操又是什么？"><a href="#生活所迫，贞操又是什么？" class="headerlink" title="生活所迫，贞操又是什么？"></a>生活所迫，贞操又是什么？</h2><p>《麦收》这部纪录片是“三部曲”中的第一部，内容展示的本应不在出现的行业从业人员，也就是妓女。在此之前，我对妓女的印象主要停留在影视剧中简单的描述，这种描述面对现实生活中的妓女，竟是如此苍白，如此幼稚，因为在现实生活中她们也是人，也需要生存。</p>
-<p>有时我看着徐童老师镜头下的北京，真的不敢相信在这个城市的另一端正在举行奥运盛典，</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2019/02/24/命·运/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/mlogo.png">
+      <time title="创建时间：2019-12-12 23:37:49" itemprop="dateCreated datePublished" datetime="2019-12-12T23:37:49+08:00">2019-12-12</time>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一进制">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/24/命·运/" itemprop="url">命·运</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-24T21:02:40+08:00">
-                2019-02-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2019/02/24/命·运/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2019/02/24/命·运/" class="cy_cmt_count" data-xid="2019/02/24/命·运/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>中国人相信命运，大事小事总喜欢用命运来解释，有人认为这是不正确的，是迷信。我个人看来命运之说并非没有道理，只是我们看待他的方法太粗暴了。往往我们说到命运，第一时间想到的是宗教之流所说的来世今生，这里我们不讨论来世往生，只说今生今世不同时间区间下的命运观。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/24/命·运/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2019/01/01/Hello 2019/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/mlogo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一进制">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/01/Hello 2019/" itemprop="url">Hello 2019 !</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-01T00:00:00+08:00">
-                2019-01-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2019/01/01/Hello 2019/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2019/01/01/Hello 2019/" class="cy_cmt_count" data-xid="2019/01/01/Hello 2019/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>emmm，</p>
-<h1 id="新年快乐！！"><a href="#新年快乐！！" class="headerlink" title="新年快乐！！"></a>新年快乐！！</h1><p>你们以为我是来写写感想，发发牢骚吗？</p>
-<p>我今天是来立<strong><code>Flag</code></strong>的！</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/01/Hello 2019/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="charlieforc.github.io/2018/12/29/得与失·2018/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Charlie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/mlogo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一进制">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/29/得与失·2018/" itemprop="url">得与失·2018</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-29T13:03:20+08:00">
-                2018-12-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2018/12/29/得与失·2018/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::charlieforc.github.io/2018/12/29/得与失·2018/" class="cy_cmt_count" data-xid="2018/12/29/得与失·2018/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>好了，2018又要走了，2018年算是起承转合的一年，上半年结束了学生时代，下班年开启了职场生涯。上半年与胜券在握的升本考试与国赛一等奖失之交臂，下半年与英搏尔再次握手，或许这就是缘分吧。</p>
-<p>本来写了很多东西，全删了，用一首歌总结一下吧，就这样吧。</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=29751469&auto=1&height=66"></iframe>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/mlogo.png"
-                alt="Charlie" />
-            
-              <p class="site-author-name" itemprop="name">Charlie</p>
-              <p class="site-description motion-element" itemprop="description">一个不想当教授的工程师不是一个好农民！</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">21</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">14</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/CharlieForC" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:c@charlieC.site" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2026</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Charlie</span>
 
   
 </div>
 
+        </div>
+      </header>
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>吴站长说，时间像一头野驴<br>2018年走的很快，可以让我没想到的是2019年居然是小跑着过完的。一路向前跑的不仅仅是时间，还有我们这些努力的孩子。</p>
+<p>前几天终于在领导的“逼迫”完成了年终总结，写的不多，就6页纸，回顾了一下这一年的工作和心得，就一年，我居然跑了中国十几个城市，大大小小的主机厂跑了个遍，见识到了毫无头绪的跟风，也体会到了踏踏实实的做事，很庆幸能和比自己优秀的人共事，突然体会到那种久违的平等。</p>
+<p>做了一年的革命砖头，即享受那种“时时新”的感觉，有讨厌那种无处着落的悲凉，回头看看元旦立下的flag，像飓风吹过稻田，一片一片的倒下，恨自己没有信守诺言，更狠自己没有坚持到底，有时候甚至觉得活该没有女朋友，估计就是有，也会被我弄丢吧。</p>
+<p>2020年我只想做成一件事，就是瘦下来，再也不过多的奢求什么了，我答应妹妹早睡的，晚安</p>
 
+      
+    </div>
 
+    
+    
+    
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
     </footer>
+  </article>
+</div>
+
+
+
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2019/02/24/%E6%84%9F%E8%B0%A2%E6%97%B6%E4%BB%A3%E7%9A%84%E9%80%A0%E5%B0%B1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/02/24/%E6%84%9F%E8%B0%A2%E6%97%B6%E4%BB%A3%E7%9A%84%E9%80%A0%E5%B0%B1/" class="post-title-link" itemprop="url">感谢时代的造就</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-02-24 21:11:17" itemprop="dateCreated datePublished" datetime="2019-02-24T21:11:17+08:00">2019-02-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>今天并不是什么特殊的日子，如果非要说特殊，那应该就是我看了徐童老师纪录片“流民三部曲”中的《麦收》和《算命》吧，虽然我的家庭并不富裕，但还算衣食无忧，我从没想到过在我生活过得轨迹中还有那么多人在为了活着奔波。我是农民的儿子，我以为我们曾经的生活已经是水深火热了，但是还是没想到原来这世间的水比我的想象力还深。</p>
+<p>其实在几十年前的我家，就是现在的他家。奶奶至今向我们诉说着他们结婚时的清贫，结婚两三年没有一件像样的家具，一家人围坐在盖垫旁吃饭，其实即便那是清苦，变化也已经悄悄开始了。奶奶因辛亥革命未遭缠足之苦，爷爷因读过书被推荐参加了工作，父亲姊妹三人都读到了高中，我想着正是因为时代的改变给我家带来的幸福。在某种程度上，我们算是那批后富裕起来的人，但是在另一方面，我们可能又是先富裕起来的人。</p>
+<h2 id="生活所迫，贞操又是什么？"><a href="#生活所迫，贞操又是什么？" class="headerlink" title="生活所迫，贞操又是什么？"></a>生活所迫，贞操又是什么？</h2><p>《麦收》这部纪录片是“三部曲”中的第一部，内容展示的本应不在出现的行业从业人员，也就是妓女。在此之前，我对妓女的印象主要停留在影视剧中简单的描述，这种描述面对现实生活中的妓女，竟是如此苍白，如此幼稚，因为在现实生活中她们也是人，也需要生存。</p>
+<p>有时我看着徐童老师镜头下的北京，真的不敢相信在这个城市的另一端正在举行奥运盛典，</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2019/02/24/%E5%91%BD%C2%B7%E8%BF%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/02/24/%E5%91%BD%C2%B7%E8%BF%90/" class="post-title-link" itemprop="url">命·运</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-02-24 21:02:40" itemprop="dateCreated datePublished" datetime="2019-02-24T21:02:40+08:00">2019-02-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>中国人相信命运，大事小事总喜欢用命运来解释，有人认为这是不正确的，是迷信。我个人看来命运之说并非没有道理，只是我们看待他的方法太粗暴了。往往我们说到命运，第一时间想到的是宗教之流所说的来世今生，这里我们不讨论来世往生，只说今生今世不同时间区间下的命运观。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/24/%E5%91%BD%C2%B7%E8%BF%90/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
         
-      </div>
+      
+    </div>
+
     
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.charliec.site/2019/01/01/Hello%202019/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mlogo.png">
+      <meta itemprop="name" content="Charlie">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一进制">
+      <meta itemprop="description" content="一个不想当教授的工程师不是一个好农民！">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 一进制">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/01/01/Hello%202019/" class="post-title-link" itemprop="url">Hello 2019 !</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-01T00:00:00+08:00">2019-01-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>emmm，</p>
+<h1 id="新年快乐！！"><a href="#新年快乐！！" class="headerlink" title="新年快乐！！"></a>新年快乐！！</h1><p>你们以为我是来写写感想，发发牢骚吗？</p>
+<p>我今天是来立**<code>Flag</code>**的！</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/01/01/Hello%202019/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Charlie</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
+    </div>
+  </footer>
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-  
-    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cytsTjb9b"></script>
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="changyan" type="application/json">{"enable":true,"appid":"cytsTjb9b","appkey":"11362eadc3dfde80eca25db71e175a50"}</script>
+<script src="/js/third-party/comments/changyan.js" defer></script>
 
 </body>
 </html>
